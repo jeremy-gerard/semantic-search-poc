@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<h3>Top matches 5 for "{{ query }}":</h3>
+	</head>
+	<body>
+		<ol>
+		{% for key, value in results.items() %}
+			<li> {{ key }} {{ value }} </li>
+		{% endfor %}
+		</ol>
+		<p><a href=search>new search</a></p>
+		<p><a href=./>home</a></p>
+	</body>
+</html>
